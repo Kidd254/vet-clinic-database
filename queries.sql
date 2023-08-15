@@ -11,7 +11,26 @@ SELECT * FROM animals WHERE weight_kg BETWEEN 10.4 AND 17.3;
 
 -- Start a transaction
 BEGIN;
+UPDATE animals
+SET species = 'unspecified';
 
+-- Rollback to undo the changes
+ROLLBACK;
+
+-- Update the animal's table by setting the species column to digimon for animals with names ending in mon
+UPDATE animals
+SET species = 'digimon'
+WHERE name LIKE '%mon';
+
+-- Update the animals table by setting the species column to Pokemon for animals without a species already set
+UPDATE animals
+SET species = 'Pokemon'
+WHERE species IS NULL;
+
+-- Commit the transaction
+COMMIT;
+
+BEGIN;
 -- Delete all animals born after Jan 1st, 2022
 DELETE FROM animals WHERE date_of_birth > '2022-01-01';
 
