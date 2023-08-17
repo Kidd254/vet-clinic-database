@@ -59,3 +59,83 @@ VALUES ('Sam Smith', 34),
        INSERT INTO species (name)
 VALUES ('Pokemon'),
        ('Digimon');
+
+       --insert data into vets table--
+      
+INSERT INTO vets (name, age, date_of_graduation)
+VALUES ('William Tatcher', 45, '2000-04-23');
+
+
+INSERT INTO vets (name, age, date_of_graduation)
+VALUES ('Maisy Smith', 26, '2019-01-17');
+
+INSERT INTO vets (name, age, date_of_graduation)
+VALUES ('Stephanie Mendez', 64, '1981-05-04');
+
+INSERT INTO vets (name, age, date_of_graduation)
+VALUES ('Jack Harkness', 38, '2008-06-08');
+
+--insert into specializations table--
+-- Insert data for Vet William Tatcher's specialization
+INSERT INTO specializations (vet_id, species_id)
+VALUES (1, 1); -- Vet William Tatcher specializes in Pokemon
+
+-- Insert data for Vet Stephanie Mendez's specializations
+INSERT INTO specializations (vet_id, species_id)
+VALUES (3, 1), -- Vet Stephanie Mendez specializes in Pokemon
+       (3, 2); -- Vet Stephanie Mendez specializes in Digimon
+
+-- Insert data for Vet Jack Harkness's specialization
+INSERT INTO specializations (vet_id, species_id)
+VALUES (4, 2); -- Vet Jack Harkness specializes in Digimon
+
+
+--insertions to visits table--
+INSERT INTO visits (animal_id, vet_id, visit_date)
+VALUES (1, 1, '2020-05-24'), -- Agumon visited William Tatcher
+       (1, 3, '2020-07-22'); -- Agumon visited Stephanie Mendez
+
+-- Insert data for Gabumon's visit
+INSERT INTO visits (animal_id, vet_id, visit_date)
+VALUES (2, 4, '2021-02-02'); -- Gabumon visited Jack Harkness
+
+-- Insert data for Pikachu's visits
+INSERT INTO visits (animal_id, vet_id, visit_date)
+VALUES (3, 2, '2020-01-05'), -- Pikachu visited Maisy Smith
+       (3, 2, '2020-03-08'), -- Pikachu visited Maisy Smith
+       (3, 2, '2020-05-14'); -- Pikachu visited Maisy Smith
+
+-- Insert data for Devimon's visit
+INSERT INTO visits (animal_id, vet_id, visit_date)
+VALUES (4, 3, '2021-05-04'); -- Devimon visited Stephanie Mendez
+
+-- Insert data for Charmander's visit
+INSERT INTO visits (animal_id, vet_id, visit_date)
+VALUES (5, 4, '2021-02-24'); -- Charmander visited Jack Harkness
+
+-- Insert data for Plantmon's visits
+INSERT INTO visits (animal_id, vet_id, visit_date)
+VALUES (6, 2, '2019-12-21'), -- Plantmon visited Maisy Smith
+       (6, 1, '2020-08-10'), -- Plantmon visited William Tatcher
+       (6, 2, '2021-04-07'); -- Plantmon visited Maisy Smith
+
+-- Insert data for Squirtle's visit
+INSERT INTO visits (animal_id, vet_id, visit_date)
+VALUES (7, 3, '2019-09-29'); -- Squirtle visited Stephanie Mendez
+
+-- Insert data for Angemon's visits
+INSERT INTO visits (animal_id, vet_id, visit_date)
+VALUES (8, 4, '2020-10-03'), -- Angemon visited Jack Harkness
+       (8, 4, '2020-11-04'); -- Angemon visited Jack Harkness
+
+-- Insert data for Boarmon's visits
+INSERT INTO visits (animal_id, vet_id, visit_date)
+VALUES (9, 2, '2019-01-24'), -- Boarmon visited Maisy Smith
+       (9, 2, '2019-05-15'), -- Boarmon visited Maisy Smith
+       (9, 2, '2020-02-27'), -- Boarmon visited Maisy Smith
+       (9, 2, '2020-08-03'); -- Boarmon visited Maisy Smith
+
+-- Insert data for Blossom's visits
+INSERT INTO visits (animal_id, vet_id, visit_date)
+VALUES (10, 3, '2020-05-24'), -- Blossom visited Stephanie Mendez
+       (10, 1, '2021-01-11'); -- Blossom visited William Tatcher
