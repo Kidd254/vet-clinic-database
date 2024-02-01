@@ -106,7 +106,7 @@ When executing the above command, a series of queries will be made to the animal
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Lawrence Muema Kioko**
+ 👤 **Lawrence Muema Kioko**
 - GitHub: [@githubhandle](https://github.com/Kidd254)
 - Twitter: [@twitterhandle](https://twitter.com/lawrenc98789206)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/lawrence-muema-kioko)
